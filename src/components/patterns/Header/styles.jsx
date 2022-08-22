@@ -24,4 +24,27 @@ export const LinkWrapper = styled.div`
         css`
             color: #fdfdfd;
         `}
+
+    position: relative;
+
+    &::after,
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(
+            135deg,
+            ${(props) => props.theme.colors.accentThird},
+            ${(props) => props.theme.colors.accentFirst}
+        );
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transition: all 250ms linear;
+        opacity: 1;
+    }
 `;
