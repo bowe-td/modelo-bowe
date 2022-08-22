@@ -11,7 +11,7 @@ const Footer = () => {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://github.com/bowe.com.br/"
+                        href="https:bowe.com.br/"
                     >
                         Bowe
                     </a>
