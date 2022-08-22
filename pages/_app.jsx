@@ -8,6 +8,12 @@ function MyApp({ Component, pageProps }) {
             <Theme>
                 <Head>
                     <link
+                        rel="shortcut png"
+                        href="/images/favicon.png"
+                        type="image/png"
+                    />
+
+                    <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"
                     />

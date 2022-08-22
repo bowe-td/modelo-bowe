@@ -3,6 +3,7 @@ import Layout from "../../components/patterns/Layout";
 import request from "graphql-request";
 import Container from "../../components/Container";
 import Image from "next/image";
+import Head from "next/head";
 
 async function api_fetch() {
     try {
@@ -44,6 +45,11 @@ const HomeScreen = () => {
 
     return (
         <Layout>
+            <Head>
+                <title>Modelo Bowe - MVP</title>
+                <meta name="description" content="" />
+            </Head>
+
             <Container>
                 {secoes &&
                     secoes.map((sec) => (

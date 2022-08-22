@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Container from "../../components/Container";
 import Heading from "../../components/Heading";
@@ -29,6 +30,11 @@ const DocsScreen = () => {
     return (
         <Layout>
             <Container>
+                <Head>
+                    <title>Documentação - MVP</title>
+                    <meta name="description" content="" />
+                </Head>
+
                 <Heading as="h2" size="lg" center spacing>
                     Documentação
                 </Heading>
