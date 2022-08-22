@@ -4,6 +4,7 @@ import Container from "../../Container";
 import { Content, LinkWrapper, Wrapper } from "./styles";
 import { headerLinks } from "../../../common/headerLinks";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Header = () => {
     const router = useRouter();
@@ -12,7 +13,12 @@ const Header = () => {
         <Wrapper>
             <Container>
                 <Content>
-                    <div className="logo">logo</div>
+                    <Image
+                        src="/images/logo.svg"
+                        width={100}
+                        height={45}
+                        alt=""
+                    />
                     <nav>
                         {headerLinks.map((link) => (
                             <LinkWrapper
