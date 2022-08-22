@@ -34,4 +34,17 @@ export const Styles = styled.h1`
         css`
             font-size: clamp(2.5rem, 3.5vw, 2.75rem);
         `}
+
+
+    ${(props) =>
+        props.gradient &&
+        css`
+            background: linear-gradient(
+                120deg,
+                ${(props) => props.theme.colors.accentFirst} 10%,
+                ${(props) => props.theme.colors.accentThird} 80%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        `}
 `;

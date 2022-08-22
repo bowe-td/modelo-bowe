@@ -7,5 +7,11 @@ export const Wrapper = styled.footer`
     p {
         text-align: center;
         font-size: 0.85rem;
+        opacity: 0.8;
+        letter-spacing: 1.5px;
+
+        a {
+            color: ${(props) => props.theme.colors.accentFirst};
+        }
     }
 `;
