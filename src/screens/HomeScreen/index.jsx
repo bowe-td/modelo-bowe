@@ -4,6 +4,7 @@ import request from "graphql-request";
 import Container from "../../components/Container";
 import Image from "next/image";
 import Head from "next/head";
+import Button from "../../components/Button";
 
 async function api_fetch() {
     try {
@@ -65,7 +66,7 @@ const HomeScreen = () => {
                                 width={500}
                                 height={200}
                             />
-                            <button
+                            <Button
                                 onClick={() => {
                                     window.navigator.clipboard.writeText(
                                         sec.codigo
@@ -73,7 +74,7 @@ const HomeScreen = () => {
                                 }}
                             >
                                 Copiar código HTML
-                            </button>
+                            </Button>
                         </div>
                     ))}
             </Container>

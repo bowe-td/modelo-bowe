@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import { Styles } from "./styles";
+import * as S from "./styles";
 
 const Layout = ({ children }) => {
     return (
-        <Styles>
+        <S.Styles>
             <Header />
             <main>{children}</main>
             <Footer />
-        </Styles>
+        </S.Styles>
     );
 };
 

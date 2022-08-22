@@ -1,11 +1,11 @@
 import React from "react";
-import { Styles } from "./styles";
+import * as S from "./styles";
 
 const Heading = ({ children, as, ...props }) => {
     return (
-        <Styles as={as} {...props}>
+        <S.Styles as={as} {...props}>
             {children}
-        </Styles>
+        </S.Styles>
     );
 };
 

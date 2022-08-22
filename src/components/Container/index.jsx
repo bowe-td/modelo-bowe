@@ -1,8 +1,8 @@
 import React from "react";
-import { Styles } from "./styles";
+import * as S from "./styles";
 
 const Container = ({ children, ...props }) => {
-    return <Styles {...props}>{children}</Styles>;
+    return <S.Styles {...props}>{children}</S.Styles>;
 };
 
 export default Container;

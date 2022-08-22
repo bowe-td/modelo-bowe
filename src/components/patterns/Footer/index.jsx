@@ -1,10 +1,10 @@
 import React from "react";
-import { Wrapper } from "./styles";
+import * as S from "./styles";
 import Container from "../../Container";
 
 const Footer = () => {
     return (
-        <Wrapper>
+        <S.Wrapper>
             <Container>
                 <p>
                     &copy; Copyright {new Date().getFullYear()} -{" "}
@@ -17,7 +17,7 @@ const Footer = () => {
                     </a>
                 </p>
             </Container>
-        </Wrapper>
+        </S.Wrapper>
     );
 };
 

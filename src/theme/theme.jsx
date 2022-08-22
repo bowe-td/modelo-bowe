@@ -4,7 +4,7 @@ export const theme = {
         light: "#fdfdfd",
         accentFirst: "#00DFD8",
         accentSecond: "#FF0080",
-        accentThird: "#F9CB28",
+        accentThird: "#7928CA",
     },
 
     containerWidth: "80em",

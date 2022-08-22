@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Container from "../../Container";
-import { Content, LinkWrapper, Wrapper } from "./styles";
+import * as S from "./styles";
 import { headerLinks } from "../../../common/headerLinks";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -10,9 +10,9 @@ const Header = () => {
     const router = useRouter();
 
     return (
-        <Wrapper>
+        <S.Wrapper>
             <Container>
-                <Content>
+                <S.Content>
                     <Image
                         src="/images/logo.svg"
                         width={100}
@@ -21,19 +21,19 @@ const Header = () => {
                     />
                     <nav>
                         {headerLinks.map((link) => (
-                            <LinkWrapper
+                            <S.LinkWrapper
                                 key={link.path}
                                 active={
                                     router.pathname === link.path ? true : false
                                 }
                             >
                                 <Link href={link.path}>{link.label}</Link>
-                            </LinkWrapper>
+                            </S.LinkWrapper>
                         ))}
                     </nav>
-                </Content>
+                </S.Content>
             </Container>
-        </Wrapper>
+        </S.Wrapper>
     );
 };
 
